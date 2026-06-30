@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Skills Zoo: Malicious AI Agent Skill Dataset</title>
   <meta name="description" content="An academic repository for the dataset of 137k analyzed and manually labeled malicious AI agent skills.">
-  <script type="module" crossorigin src="./assets/index-iw9lIhG2.js"></script>
+  <script type="module" crossorigin src="./assets/index-BgHzNNMF.js"></script>
   <link rel="stylesheet" crossorigin href="./assets/index-D99L_Qpm.css">
 </head>
 <body>
@@ -269,40 +269,14 @@
       </div>
       <h3 class="dialog-title">Application Submitted</h3>
       <p class="dialog-subtitle">
-        Your request has been recorded. Please finalize via one of the methods below so we can process your application:
+        Thank you, <strong id="success-applicant-name"></strong>. Your access request has been received and is under review.
       </p>
-
-      <div class="choice-grid">
-        <div class="choice-box" id="choice-google-form">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-            <polyline points="14 2 14 8 20 8"/>
-            <line x1="16" y1="13" x2="8" y2="13"/>
-            <line x1="16" y1="17" x2="8" y2="17"/>
-          </svg>
-          <h4>Google Form</h4>
-          <p>Submit via our Google Form for fastest processing.</p>
-        </div>
-
-        <div class="choice-box" id="choice-email">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-            <polyline points="22,6 12,13 2,6"/>
-          </svg>
-          <h4>Email Authors</h4>
-          <p>Open a pre-filled email in your mail client.</p>
-        </div>
-      </div>
-
-      <div class="copy-box" id="markdown-copy-area">
-        <label for="success-markdown-block" class="copy-label">Or copy this message block:</label>
-        <textarea id="success-markdown-block" class="copy-textarea" readonly></textarea>
-        <button class="btn btn-sm btn-primary" id="btn-copy-markdown" style="width: 100%;">Copy to Clipboard</button>
-      </div>
-
-      <p class="dialog-footnote">
-        We will review your application and send you the dataset download link via email within 1-2 business days.
+      <p class="dialog-subtitle">
+        We will send the dataset download link to <strong id="success-applicant-email"></strong> within 1-2 business days.
       </p>
+      <button class="btn btn-primary" onclick="this.closest('dialog').close()" style="margin-top: 1rem;">
+        Got it
+      </button>
     </div>
   </dialog>
 
