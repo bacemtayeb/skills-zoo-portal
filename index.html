@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills Zoo: Malicious AI Agent Skill Dataset</title>
+  <meta name="description" content="An academic repository for the dataset of 137k analyzed and manually labeled malicious AI agent skills.">
+  <script type="module" crossorigin src="./assets/index-iw9lIhG2.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-D99L_Qpm.css">
+</head>
+<body>
+
+  <div class="app-container">
+
+    <!-- Left Sidebar Menu -->
+    <aside>
+      <div class="logo-section">
+        <div class="logo-title">
+          <svg class="logo-icon" viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+          </svg>
+          <span>SKILLS ZOO</span>
+        </div>
+        <div class="logo-sub">AI Agent Threat Dataset</div>
+      </div>
+
+      <nav class="sidebar-nav" aria-label="Main Navigation">
+        <button class="nav-link active" data-target="dashboard" id="nav-dashboard">
+          <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Dataset Overview
+        </button>
+        <button class="nav-link" data-target="request" id="nav-request">
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          Request Access
+        </button>
+      </nav>
+
+      <!-- Sidebar Footer -->
+      <div class="sidebar-footer">
+        <div class="sidebar-footer-meta">
+          <span class="version-badge">v1.0.0</span>
+          <span class="release-date">June 2026</span>
+        </div>
+        <div class="sidebar-links">
+          <a href="https://github.com/skills-zoo" target="_blank" rel="noopener" class="sidebar-ext-link">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Panel -->
+    <main>
+
+      <!-- SECTION: Dataset Overview -->
+      <section id="section-dashboard" class="section active">
+        <!-- Hero Banner -->
+        <div class="hero-banner">
+          <div class="hero-content">
+            <div class="hero-badge">Open Research Dataset</div>
+            <h1 class="hero-title">Skills Zoo</h1>
+            <p class="hero-desc">
+              The empirical dataset collected and analyzed during our research on malicious system skills within Large Language Model (LLM) agent environments.
+            </p>
+            <button class="btn btn-primary btn-hero" id="btn-hero-request">
+              Apply for Dataset Access
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-ring ring-1"></div>
+            <div class="hero-ring ring-2"></div>
+            <div class="hero-ring ring-3"></div>
+            <svg class="hero-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- KPI Metrics -->
+        <div class="metrics-row">
+          <div class="metric-box analyzed">
+            <div class="metric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+            </div>
+            <div class="metric-data">
+              <div class="metric-num" data-count="137138">0</div>
+              <div class="metric-title">Skills Analyzed</div>
+            </div>
+          </div>
+          <div class="metric-box flagged">
+            <div class="metric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6M23 11h-6"/></svg>
+            </div>
+            <div class="metric-data">
+              <div class="metric-num" data-count="238">0</div>
+              <div class="metric-title">Human-Labeled</div>
+            </div>
+          </div>
+          <div class="metric-box consensus">
+            <div class="metric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            </div>
+            <div class="metric-data">
+              <div class="metric-num" data-count="131">0</div>
+              <div class="metric-title">Confirmed Malicious</div>
+            </div>
+          </div>
+          <div class="metric-box contested">
+            <div class="metric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
+            </div>
+            <div class="metric-data">
+              <div class="metric-num" data-count="158">0</div>
+              <div class="metric-title">Reviewer Agreement</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Methodology Summary -->
+        <div class="card">
+          <div class="card-header">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            <h3>Methodology Summary</h3>
+          </div>
+          <p>
+            Our dataset is compiled from open-source agent libraries and marketplace snapshots. It consists of two primary components:
+          </p>
+          <div class="method-grid">
+            <div class="method-item">
+              <div class="method-label">137k Snapshot</div>
+              <p>Full corpus metadata and execution statistics across benign and flagged agent capabilities.</p>
+            </div>
+            <div class="method-item">
+              <div class="method-label">238 Labeled Skills</div>
+              <p>Human-reviewed subset with attention span annotations. Each entry includes source marketplace, vulnerability classification, top-5 suspicious spans ranked by attention score, and dual-reviewer ground truth labels (131 HARMFUL, 80 BENIGN_OFFENSIVE, 27 BENIGN false alarms). Reviewer agreement: &kappa;=0.466 on binary malicious/benign classification.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Security Notice -->
+        <div class="card card-warning">
+          <div class="card-header">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <h3>Security Notice</h3>
+          </div>
+          <p style="margin-bottom: 0;">
+            The labeled dataset includes operational code snippets demonstrating Remote Code Execution (RCE), credential exfiltration, and command-and-control mechanisms. Users should handle with appropriate security controls.
+          </p>
+        </div>
+      </section>
+
+
+      <!-- SECTION: Request Access -->
+      <section id="section-request" class="section">
+        <h1>Request Access</h1>
+
+        <div class="request-grid">
+          <!-- Information Column -->
+          <div>
+            <p>
+              To download the Skills Zoo dataset snapshot (which includes classification vectors, suspicious span labels, and attention score details), please complete the registration process.
+            </p>
+
+            <h3>Requirements for Verification</h3>
+            <ul class="academic-list">
+              <li>
+                <strong>Academic/Professional Affiliation:</strong> You must represent a verified research laboratory, university faculty, threat intelligence firm, or model safety organization.
+              </li>
+              <li>
+                <strong>Official Email Address:</strong> Requests submitted from public, generic domains (e.g. @gmail.com, @yahoo.com, @proton.me) are systematically flagged and require manual institutional validation.
+              </li>
+              <li>
+                <strong>Research Purpose Statement:</strong> A detailed explanation (at least 100 characters) detailing how the dataset fits into your defense or evaluation research.
+              </li>
+              <li>
+                <strong>Terms Agreement:</strong> Re-staging active exploits or redistributing dataset files is prohibited.
+              </li>
+            </ul>
+
+            <!-- What you get -->
+            <div class="card card-compact">
+              <div class="card-header">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                <h4>What You Receive</h4>
+              </div>
+              <ul class="dataset-contents">
+                <li>137k skill metadata corpus (CSV)</li>
+                <li>238 human-labeled threat classifications</li>
+                <li>Top-5 suspicious span annotations per skill</li>
+                <li>Attention score vectors</li>
+                <li>Dual-reviewer ground truth labels</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Form Column -->
+          <div class="form-container">
+            <h3>Application Form</h3>
+            <form id="request-form" novalidate>
+              <div class="form-group">
+                <label for="req-name">Full Name</label>
+                <input type="text" id="req-name" required autocomplete="name" placeholder="Dr. Jane Doe">
+                <div class="error-msg">Please enter your name.</div>
+              </div>
+
+              <div class="form-group">
+                <label for="req-email">Institutional / Professional Email</label>
+                <input type="email" id="req-email" required autocomplete="email" placeholder="j.doe@university.edu">
+                <div class="error-msg" id="email-error-text">Please enter a valid institutional email.</div>
+              </div>
+
+              <div class="form-group">
+                <label for="req-institution">Affiliation / Organization</label>
+                <input type="text" id="req-institution" required placeholder="University of Luxembourg, Sector Research Lab">
+                <div class="error-msg">Please enter your organization name.</div>
+              </div>
+
+              <div class="form-group">
+                <label for="req-profile">Academic / Professional Profile Link</label>
+                <input type="url" id="req-profile" required placeholder="ORCID link, Google Scholar, or faculty website">
+                <div class="error-msg">Please enter a valid profile URL.</div>
+              </div>
+
+              <div class="form-group">
+                <label for="req-purpose">Intended Use Case Description</label>
+                <textarea id="req-purpose" required minlength="100" rows="4" placeholder="How do you plan to use this dataset? (minimum 100 characters)..."></textarea>
+                <div class="error-msg">Please describe your purpose in detail (at least 100 characters).</div>
+              </div>
+
+              <div class="form-group" style="margin-top: 1.5rem;">
+                <label class="checkbox-label" for="req-terms">
+                  <input type="checkbox" id="req-terms" required>
+                  <span>I agree to use the dataset strictly for defensive, ethical research purposes and will not redistribute the data.</span>
+                </label>
+                <div class="error-msg">You must accept the terms of use.</div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit">
+                Submit Access Application
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- MODAL: Request Success -->
+  <dialog id="dialog-form-success">
+    <button class="dialog-close-btn" id="btn-close-success-dialog" aria-label="Close dialog">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+    <div class="dialog-body">
+      <div class="dialog-icon-success">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+          <polyline points="22 4 12 14.01 9 11.01"/>
+        </svg>
+      </div>
+      <h3 class="dialog-title">Application Submitted</h3>
+      <p class="dialog-subtitle">
+        Your request has been recorded. Please finalize via one of the methods below so we can process your application:
+      </p>
+
+      <div class="choice-grid">
+        <div class="choice-box" id="choice-google-form">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <line x1="16" y1="13" x2="8" y2="13"/>
+            <line x1="16" y1="17" x2="8" y2="17"/>
+          </svg>
+          <h4>Google Form</h4>
+          <p>Submit via our Google Form for fastest processing.</p>
+        </div>
+
+        <div class="choice-box" id="choice-email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+          <h4>Email Authors</h4>
+          <p>Open a pre-filled email in your mail client.</p>
+        </div>
+      </div>
+
+      <div class="copy-box" id="markdown-copy-area">
+        <label for="success-markdown-block" class="copy-label">Or copy this message block:</label>
+        <textarea id="success-markdown-block" class="copy-textarea" readonly></textarea>
+        <button class="btn btn-sm btn-primary" id="btn-copy-markdown" style="width: 100%;">Copy to Clipboard</button>
+      </div>
+
+      <p class="dialog-footnote">
+        We will review your application and send you the dataset download link via email within 1-2 business days.
+      </p>
+    </div>
+  </dialog>
+
+  <!-- JS Module App Logic -->
+</body>
+</html>
